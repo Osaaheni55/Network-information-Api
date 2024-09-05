@@ -20,17 +20,19 @@ body {
 h1 {
     margin-bottom: 20px;
 }
-/* #startButton{
-    /* background-color: rgb(97, 157, 165);
+
+#startButton{
+    background-color: rgb(97, 157, 165);
+    border-width: 1px;
     height: 36px;
     width: 105px;
-    border-width: 1px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 8px; */
-/* }
-#startButton:hover{
+}
+ #startButton:hover{
     background-color: rgb(60, 93, 97);
-} */ */
+ }
+
 
 .notification {
     position: fixed;

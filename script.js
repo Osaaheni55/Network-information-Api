@@ -41,23 +41,23 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNetworkInfo();
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-//     const startButton = document.getElementById('startButton');
+document.addEventListener('DOMContentLoaded', () => {
+    const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    const startButton = document.getElementById('startButton');
 
-//     function updateNetworkInfo() {
-//         document.getElementById('connectionType').textContent = `Connection Type: ${connection.type}`;
-//         document.getElementById('effectiveType').textContent = `Effective Type: ${connection.effectiveType}`;
-//         document.getElementById('downlink').textContent = `Downlink: ${connection.downlink} Mbps`;
-//         document.getElementById('rtt').textContent = `RTT: ${connection.rtt} ms`;
-//         document.getElementById('saveData').textContent = `Save Data: ${connection.saveData}`;
-//     }
+    function updateNetworkInfo() {
+        document.getElementById('connectionType').textContent = `Connection Type: ${connection.type}`;
+        document.getElementById('effectiveType').textContent = `Effective Type: ${connection.effectiveType}`;
+        document.getElementById('downlink').textContent = `Downlink: ${connection.downlink} Mbps`;
+        document.getElementById('rtt').textContent = `RTT: ${connection.rtt} ms`;
+        document.getElementById('saveData').textContent = `Save Data: ${connection.saveData}`;
+    }
 
-//     function refreshNetworkInfo() {
-//         updateNetworkInfo();
-//         console.log('Network information refreshed');
-//     }
+    function refreshNetworkInfo() {
+        updateNetworkInfo();
+        console.log('Network information refreshed');
+    }
 
-//     startButton.addEventListener('click', refreshNetworkInfo);
-// });
+    startButton.addEventListener('click', refreshNetworkInfo);
+});
 
